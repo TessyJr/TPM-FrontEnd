@@ -1,0 +1,163 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Hover Effect */
+.container{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    border-radius: 100px;
+}
+
+.container .facebook{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b5998;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.container .facebook:hover{
+    background-color: #3b5998;
+    color: white;
+    transition: 0.5s;
+}
+
+.container .twitter{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #08a0e9;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.container .twitter:hover{
+    background-color: #08a0e9;
+    color: white;
+    transition: 0.5s;
+}
+
+.container .linkedin{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0077b5;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.container .linkedin:hover{
+    background-color: #0077b5;
+    color: white;
+    transition: 0.5s;
+}
+
+.container .discord{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7289d9;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.container .discord:hover{
+    background-color: #7289d9;
+    color: white;
+    transition: 0.5s;
+}
+
+
+/* Lifting Effect */
+.box{
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+    transition: 0.7s;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.box:hover{
+    transform: translate(0,-10px);
+    box-shadow: 0px 20px 25px #888888;
+    transition: 1s;
+}
+
+/* Button Hover and On-Click Effect */
+button{
+    border: none;
+    background-color: rosybrown;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+    background-color: white;
+    border: 3px solid royalblue;
+    color: royalblue;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: royalblue;
+    color: white;
+    transition: 0.3s;
+}
+
+button:active{
+    opacity: 0.5;
+    transition: 0.1s;
+    box-shadow: 0px 0px 5px 1px royalblue;
+}
+
+/* Infinite Jumping Effect with Delay*/
+@keyframes jump{
+    0% {
+        transform: translate(0, 0px);
+    }
+    10% {
+        transform: translate(0, -5px);
+    }
+    15% {
+        transform: translate(0, 0px);
+    }
+    20% {
+        transform: translate(0, -5px);
+    }
+    25% {
+        transform: translate(0, 0px);
+    }
+    100%{
+        transform: translate(0, 0px);
+    }
+
+}
+
+.jumpBtn{
+    animation-name: jump;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-timing-function: ease-out;
+}
+
