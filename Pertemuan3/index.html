@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 3 TPM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .ourWork h1{
+        color: grey;
+    }
+
+    .ourWork{
+        background-color: bisque;
+        min-height: 100vh;
+        padding: 3rem;
+    }
+
+    .ourWork > .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .imageContainer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .innerImageContainer{
+        width: 33%;
+    }
+
+    .innerImageContainer > img{
+        width: 100%;
+    }
+
+    .innerImage{
+        width: 30%;
+    }
+
+    .imagePipih{
+        min-height: 150px;
+        background-image: url(https://images.unsplash.com/photo-1541800569-95a8b25835f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+        height: 50%;
+        background-size: cover;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .imageContainer{
+            flex-direction: column;
+        }
+
+        .innerImage{
+            width: 100%;
+        }
+
+        .innerImageContainer{
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <section class="ourWork" style="color: blue;">
+        <div class="container">
+            <h1>Our Work</h1>
+            <div class="imageContainer">
+                <img src="https://images.unsplash.com/photo-1617634667039-8e4cb277ab46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=368&q=80" alt="lembah" class="innerImage">
+                <div class="innerImageContainer">
+                    <div class="imagePipih">
+                    </div>
+                    <div class="imagePipih">
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1541410965313-d53b3c16ef17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80" alt="" class="innerImage">
+            </div>
+        </div>
+ 
+    </section>
+
+    <script>
+        // int variable = 1
+        // JSON
+        // Class Pet, object ikan
+
+        //var, let, const
+        var nama = "Randi"; //global variable
+        const APP_NAME = "TPM Pertemuan 4"; //ga bisa diganti
+        let angka = 1; //scope variable
+
+        console.log(add(5,10));
+
+
+
+        //function
+        function add (a,b) {
+            return a+b;
+        };
+
+        //varialbe containing function
+        const addArrow = (a,b) => {
+            return a+b;
+        };
+
+        //looping
+        const array = [1,2,3,4,5,6];
+        array.forEach();
+
+        console.log(array.map(number)) => {
+            return number + 1;
+        };
+
+        console.log(array.filer(number)) => {
+            return number > 3;
+        };
+
+        console.log(array.reduce((acc,number) => {
+            return acc + number;
+        }));
+    </script>
+</body>
+</html>

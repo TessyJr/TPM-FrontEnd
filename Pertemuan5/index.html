@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 5</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+
+    <script>
+        const root = document.getElementById("root");
+
+        fetch("https://api.cookit.link/products")
+            .then((res) => res.json())
+            .then(({ data }) => {
+                data.forEach((datum) => {
+                    const newNode = document.createElement("div");
+
+                    newNode.innerHTML = `Name: ${datum.name} <br> Description: ${datum.description}`;
+
+                    root.append(newNode); //string interpolation
+                    root.append(document.createElement("br"));
+                });
+            });
+
+        (async () => {
+            const res = await fetch("https://api.cookit.link/products");
+            const {data} = await res.json();
+            console.log(data);
+        })();
+
+        
+        
+        console.log("chris");
+    </script>
+</body>
+</html>
