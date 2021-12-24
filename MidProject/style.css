@@ -106,7 +106,7 @@ nav .container .navContainer .longNavbar li:hover{
 .home{
     background-image:linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ), url(https://images.unsplash.com/34/BA1yLjNnQCI1yisIZGEi_2013-07-16_1922_IMG_9873.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80);
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -117,9 +117,10 @@ nav .container .navContainer .longNavbar li:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: auto;
-    margin-top: 320px;
     animation: slideUp 1s;
+    min-height: 100vh;
 }
 
 .home .contentContainer h1{
@@ -134,7 +135,7 @@ nav .container .navContainer .longNavbar li:hover{
 
 .home .arrowContainer{
     font-size: 100px;
-    padding-bottom: 80px;
+    bottom: 80px;
     animation: bounce 2s ease-in-out 1s infinite, slideUp 1s;
     position: absolute;
     margin-top: 720px;
@@ -257,6 +258,18 @@ nav .container .navContainer .longNavbar li:hover{
     padding: 50px 0;
 }
 
+.contactUs input{
+    color: #4D4D4D;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contactUs textarea{
+    color: #4D4D4D;
+    font-weight: 700;
+    font-size: 18px;
+}
+
 .contactUs h1{
     font-size: 50px;
     margin-bottom: 50px;
@@ -265,7 +278,7 @@ nav .container .navContainer .longNavbar li:hover{
 .contactUs .form{
     background-color: #C4C4C4;
     border-radius: 10px;
-    padding: 50px;
+    padding: 80px;
     border: 3px solid #393939;
     display: flex;
     flex-direction: column;
@@ -278,6 +291,10 @@ nav .container .navContainer .longNavbar li:hover{
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.contactUs .form .inputName input:nth-child(2){
+    margin: 0;
 }
 
 .contactUs .form .inputPhoneGender{
@@ -310,6 +327,7 @@ nav .container .navContainer .longNavbar li:hover{
 .contactUs .form .inputPhoneGender .inputGender label{
     color: black;
     font-weight: bolder;
+    font-size: 18px;
 }
 
 .contactUs .form button{
@@ -327,35 +345,34 @@ nav .container .navContainer .longNavbar li:hover{
 #firstName{
     width: 50%;
     height: 50px;
-    margin: 10px;
+    margin-right: 10px;
     padding: 10px;
 }
 
 #lastName{
     width: 50%;
-    height: 50px;
-    margin: 10px;
+    height: 50px;   
     padding: 10px;
 }
 
 #email{
     width: 100%;
     height: 50px;
-    margin: 10px;
+    margin: 10px 0;
     padding: 10px;
 }
 
 #phoneNumber{
     width: 50%;
     height: 50px;
-    margin: 10px;
+    margin: 10px 0;
     padding: 10px;
 }
 
 #message{
     max-width: 100%;
     min-width: 100%;
-    margin: 10px;
+    margin: 10px 0;
     padding: 10px;
 }
 
@@ -467,6 +484,14 @@ footer .copyright{
         content: "\f00d";
     }
 
+    .aboutUs .content span{
+        font-size: 250px;
+    }
+
+    .aboutUs .content p{
+        font-size: 35px;
+    }
+
     .ourWork .content{
         height: fit-content;
         margin: 50px 0;
@@ -513,6 +538,13 @@ footer .copyright{
 
     footer .container .right{
         width: 100%;
+    }
+
+}
+
+@media only screen and (max-height: 700px) {
+    .home .arrowContainer{
+        display: none;
     }
 
 }

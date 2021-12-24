@@ -1,0 +1,5 @@
+1. Remove padding di last name form
+2. Add responsive for home section
+3. Decrease image size in About Us when screen is small
+4. Add Validation for message in form
+5. Remove bottom padding in navbar

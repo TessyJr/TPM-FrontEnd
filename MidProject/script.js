@@ -12,3 +12,18 @@ function myFunction() {
     }
 
   }
+
+ function validation(event) {
+    var words = document.getElementById("message").value;
+    var trimWords = words.trim();
+    var text = trimWords.split(/\s+/);
+    var count = text.length;
+    
+    console.log(count);
+
+    if(count<5){
+      event.preventDefault();
+      document.getElementById("message").setCustomValidity("Please lengthen this text to 5 or more words");
+    }
+    
+  };

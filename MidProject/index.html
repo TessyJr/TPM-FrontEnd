@@ -84,35 +84,34 @@
     <!-- Contact Us -->
     <section class="contactUs" id="contactUs">
         <h1>Contact Us</h1>
-        <div class="form">
+        <form class="form" onsubmit="validation(event)">
             <div class="inputName">
-                <input type="text" placeholder="First Name" id="firstName">
-                <input type="text" placeholder="Last Name", id="lastName">
+                <input type="text" placeholder="First Name" id="firstName" required>
+                <input type="text" placeholder="Last Name" id="lastName">
             </div>
             <div class="inputEmail">
-                <input type="email" id="email" placeholder="Email">
+                <input type="email" id="email" placeholder="Email" required>
             </div>
             <div class="inputPhoneGender">
-                <input type="text" placeholder="Phone Number", id="phoneNumber">
+                <input type="text" placeholder="Phone Number" id="phoneNumber" minlength="10" maxlength="12" required>
                 <div class="inputGender">
                     <div>
-                        <input type="radio" id="male" name="gender">
+                        <input type="radio" id="male" name="gender" required>
                         <label for="male">Male</label>
                     </div>
                     <div>
-                        <input type="radio" id="female" name="gender">
+                        <input type="radio" id="female" name="gender" required>
                         <label for="female">Female</label>
                     </div>
                 </div> 
             </div>
             <div class="inputMessage">
-                <textarea name="message" id="message" cols="30" rows="15" placeholder="Message"></textarea>   
+                <textarea name="message" id="message" cols="30" rows="15" placeholder="Message" required></textarea>   
             </div>
             <div class="submitForm">
                 <button type="submit">Submit</button>
             </div>
-            
-        </div>
+        </form>
     </section>
 
     <!-- footer -->

@@ -10,3 +10,5 @@ pertemuan 3: Media query and javascript
 pertemuan 4: Javascript DOM
 
 pertemuan 5: API + JQuery (little)
+
+pertemuan 6: Review Mid Project
